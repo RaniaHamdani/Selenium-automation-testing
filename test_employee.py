@@ -77,7 +77,7 @@ class TestCandidate(unittest.TestCase):
     def test_employee_journey(self):     
     
         driver = webdriver.Chrome(chrome_options=opt, executable_path=r"C:\webdrivers\chromedriver.exe")
-        driver.get("https://cb-smart-recruitment-front-end.azurewebsites.net/candidate/authentication?role=employee&pid=14PmcFgSZQVa6JGRWl3iwi")
+        driver.get("*********")
         #signup(1,driver)
         signup(1,driver)
         
