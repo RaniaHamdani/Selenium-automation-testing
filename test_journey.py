@@ -90,7 +90,7 @@ class TestCandidate(unittest.TestCase):
     
         driver = webdriver.Chrome(chrome_options=opt,executable_path=r"C:\webdrivers\chromedriver.exe")
 
-        driver.get("https://cb-smart-recruitment-front-end.azurewebsites.net/candidate/authentication?role=candidate&pid=6Dax4CnRGO3nO1f41QREIZ")
+        driver.get("**********")
         
         login(104,driver)
         try:
@@ -198,7 +198,7 @@ class TestRecruiter(unittest.TestCase):
         
         driver = webdriver.Chrome(chrome_options=opt,executable_path=r"C:\webdrivers\chromedriver.exe")
 
-        driver.get("https://cb-smart-recruitment-front-end.azurewebsites.net/candidate/authentication?role=recruiter")
+        driver.get("*********")
         login(105,driver)
 
         
@@ -333,7 +333,7 @@ class TestEmployee(unittest.TestCase):
         assert True  
     
         driver = webdriver.Chrome(chrome_options=opt, executable_path=r"C:\webdrivers\chromedriver.exe")
-        driver.get("https://cb-smart-recruitment-front-end.azurewebsites.net/candidate/authentication?role=employee&pid=14PmcFgSZQVa6JGRWl3iwi")
+        driver.get("************")
         login(105,driver)
         
         group = driver.find_element(By.NAME, "group")
@@ -373,7 +373,7 @@ class TestManager(unittest.TestCase):
         
         driver= webdriver.Chrome(executable_path=r"C:\webdrivers\chromedriver.exe")
         #driver.maximize_window()
-        driver.get("https://cb-smart-recruitment-front-end.azurewebsites.net/candidate/authentication?role=manager")
+        driver.get("*************")
 
         email = driver.find_element(By.NAME, "email")
         email.send_keys("raniahamdeni@gmail.com")
