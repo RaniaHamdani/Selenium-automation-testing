@@ -84,7 +84,7 @@ def signup(i,driver):
 
 @pytest.fixture()    
 def test_candidate_info():
-    driver.get("https://cb-smart-recruitment-front-end.azurewebsites.net/candidate/authentication?role=candidate&pid=6Dax4CnRGO3nO1f41QREIZ")
+    driver.get("****")
     signup(10,driver)
     current_role = driver.find_element(By.CSS_SELECTOR, 'input[placeholder="Current Role"][id="mui-1"]')
     current_role.send_keys('software engineer')
