@@ -32,7 +32,7 @@ global driver
 
 driver = webdriver.Chrome(chrome_options=opt,executable_path=r"C:\webdrivers\chromedriver.exe")
 
-driver.get("https://sr-portal-test.careerboosts.com/candidate/authentication?role=recruiter")
+driver.get("************")
         
 @allure.severity(allure.severity_level.CRITICAL)
 class Test_Recruiter_login(unittest.TestCase):
