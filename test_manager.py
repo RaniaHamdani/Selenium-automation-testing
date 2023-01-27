@@ -86,7 +86,7 @@ class TestCandidate(unittest.TestCase):
     def test_candidate_journey(self):
         
         driver = webdriver.Chrome(chrome_options=opt, executable_path=r"C:\webdrivers\chromedriver.exe")
-        driver.get("https://cb-smart-recruitment-front-end.azurewebsites.net/candidate/authentication?role=candidate&pid=6Dax4CnRGO3nO1f41QREIZ")
+        driver.get("**********")
         signup(4,driver)
         current_role = driver.find_element(By.CSS_SELECTOR, 'input[placeholder="Current Role"][id="mui-1"]')
         current_role.send_keys('software engineer')
